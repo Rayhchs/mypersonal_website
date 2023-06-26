@@ -27,7 +27,18 @@ body {
   font-weight: 700;
 }
 
+.subsubheader-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .body-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.subbody-text {
+  padding-left: 8px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -38,6 +49,15 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.bold-card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-weight: 700;
 }
 
 .project-title {
