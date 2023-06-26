@@ -71,7 +71,7 @@ body {
 .about-section-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 
@@ -221,19 +221,18 @@ body {
 
 .work-container {
   display: flex;
-  gap: 50px 50px;
+  gap: 50px 10px;
   flex-wrap: wrap;
 }
 
     /* Work Cards */
 
     .work-date-card {
-      flex-basis: 25%; /* 设置为 25% 宽度 */
+      flex-basis: 25%;
       display: flex;
       flex-direction: column;
       gap: 34px;
       margin-bottom: auto;
-/*      margin-right: auto;*/
     }
 
     .work-date-text-container {
@@ -273,6 +272,18 @@ body {
 
 
 
+@media (max-width: 768px) {
+  /* 在屏幕宽度小于等于768px时应用的样式 */
+  .work-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .work-date-card,
+  .work-content {
+    flex-basis: 100%;
+  }
+}
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
